@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: no-repeat url('../images/bg_drummer.jpg');
+}
+
+.key-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #fafafa;
+  text-align: center;
+  text-shadow: rgb(255, 204, 0) 1px 0 20px;
+  background: rgba(238, 238, 238, 0.2);
+  color: #fafafa;
+}
+
+.key__name {
+  color: inherit;
+  font-family: 'Special Elite', cursive;
+  font-size: 4em;
+}
+
+.key__sound {
+  color: inherit;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
