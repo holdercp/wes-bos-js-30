@@ -9,11 +9,12 @@ body {
 
 main {
   display: flex;
+  overflow-y: scroll;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: no-repeat center url("../images/bg_drummer.jpg");
+  background: no-repeat center/cover url("../images/bg_drummer.jpg");
 }
 
 .key-container {
@@ -37,7 +38,13 @@ main {
   color: rgb(250, 250, 250);
   text-align: center;
   font-weight: 400;
+  cursor: pointer;
   transition: all 0.07s;
+
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
 }
 
 .key--playing {
