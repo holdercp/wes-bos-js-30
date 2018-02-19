@@ -1,7 +1,7 @@
 html {
   background: #2c3e50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #fd746c, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fd746c, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(bottom, #fd746c, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fd746c, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   font-size: 10px;
   font-family: 'helvetica neue', sans-serif;
@@ -22,7 +22,7 @@ body {
   padding: 2rem;
   width: 30rem;
   height: 30rem;
-  border: 2px solid #fafafa;
+  border: .5px solid #fafafa;
   border-radius: 50%;
   box-shadow:
     0 0 0 4px rgba(0, 0, 0, 0.1),
@@ -43,10 +43,22 @@ body {
   top: 50%;
   width: 50%;
   height: 4px;
+  border-radius: 2px;
   background: #fafafa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.33, 1.76, 0.33, 1.75);
   transform: rotate(90deg);
   transform-origin: 100%;
+}
+
+.clock__hand--hour {}
+
+.clock__hand--min {
+  left: 15%;
+  width: 35%;
+}
+
+.clock__hand--sec {
+  background-color: #265c79;
 }
