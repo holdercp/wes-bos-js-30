@@ -42,7 +42,11 @@ body {
   position: absolute;
   top: 50%;
   width: 50%;
-  height: 6px;
+  height: 4px;
   background: #fafafa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.33, 1.76, 0.33, 1.75);
+  transform: rotate(90deg);
+  transform-origin: 100%;
 }
