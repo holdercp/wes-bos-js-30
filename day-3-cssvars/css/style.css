@@ -1,55 +1,86 @@
+:root {
+  --color-base: #3c2b75;
+  --spacing: 0px ;
+  --blur: 0px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  padding: 1em;
+  background: #fafaf7;
   font-family: "Nunito Sans", sans-serif;
-  background: #3c2b75;
 }
 
 header {
-  padding: 1rem;
+  color: #3175eb;
 }
 
 h1 {
-  font-family: "Nunito", serif;
+  text-align: center;
   font-weight: 200;
+  font-size: 3rem;
+  font-family: "Nunito", serif;
 }
 
-:root {
-  --base-color: #fafaf7;
-  --spacing: 10px ;
-  --blur: 0px;
+.row {
+  padding: 1em 0;
 }
 
 .highlight {
-  color: var(--base-color);
+  color: var(--color-base);
+  font-weight: 600;
 }
 
 .controls {
-  padding: 1em;
-  color: #fafaf7;
+  color: #3c2b75;
 }
 .controls__list {
   margin: 0;
-  list-style: none;
   padding-left: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .controls__list {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .controls__list-item {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding: .5rem 0;
+}
+@media (min-width: 768px) {
+  .controls__list-item {
+    margin: 0 1rem;
+  }
+}
+
+.controls__label {
+  padding-right: 1rem;
+}
+@media (min-width: 576px) {
+  .controls__label {
+    font-size: 2rem;
+  }
 }
 
 .playground {
   margin: 0 auto;
 }
 .playground__img {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
   padding: var(--spacing);
   max-width: 960px;
-  background-color: var(--base-color);
-  filter: blur(var(--blur));
+  width: 100%;
   border-radius: 2px;
+  background-color: var(--color-base);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  filter: blur(var(--blur));
 }

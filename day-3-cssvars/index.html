@@ -13,32 +13,32 @@
   </head>
 
   <body>
-    <header>
+    <header class="row">
       <h1>Changing CSS Variables with <span class="highlight">JS</span></h1>
     </header>
 
-    <section>
+    <section class="row">
       <div class="controls">
         <ul class="controls__list">
           <li class="controls__list-item">
             <label class="controls__label" for="spacing">Spacing</label>
-            <input type="range" name="spacing" class="controls__input controls__input--range" min="10" max="200" value="10">
+            <input type="range" name="spacing" class="controls__input controls__input--range" min="0" max="200" value="0" data-sizing="px">
           </li>
   
           <li class="controls__list-item">
             <label class="controls__label" for="blur">Blur</label>
-            <input type="range" name="blur" class="controls__input controls__input--range" min="0" max="25" value="10">
+            <input type="range" name="blur" class="controls__input controls__input--range" min="0" max="25" value="0" data-sizing="px">
           </li>
   
           <li class="controls__list-item">
             <label class="controls__label" for="color-base">Base Color</label>
-            <input type="color" name="color-base" class="controls__input controls__input--color">
+            <input type="color" name="color-base" value="#3c2b75" class="controls__input controls__input--color">
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="playground">
+    <section class="playground row">
       <img class="playground__img" src="images/mountain.jpg" alt="A mountain in the distance">
     </section>
   </body>
